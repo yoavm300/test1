@@ -1,0 +1,14 @@
+name: PR Checks
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Checking PR from ${{ github.head_ref }}"
+      - run: echo "Target branch: ${{ github.base_ref }}"
