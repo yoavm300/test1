@@ -15,3 +15,6 @@ jobs:
 
       - name: Print system info
         run: uname -a
+
+      - name: List files
+        run: ls -la
