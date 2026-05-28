@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: echo "Checking PR from ${{ github.head_ref }}"
-      - run: echo "Target branch- ${{ github.base_ref }}"
+      - run: echo "Target branch:${{ github.base_ref }}"
